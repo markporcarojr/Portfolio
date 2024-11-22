@@ -1,13 +1,15 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
-import dynamic from "next/dynamic";
 
-const World = dynamic(() => import("./Globe").then((m) => m.World), {
+import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
+
+// Dynamically import the Globe component without SSR
+const World = dynamic(() => import("./Globe").then((mod) => mod.World), {
   ssr: false,
 });
 
 export function GlobeDemo() {
+  // Globe configuration
   const globeConfig = {
     pointSize: 4,
     globeColor: "#062056",
@@ -30,7 +32,12 @@ export function GlobeDemo() {
     autoRotate: true,
     autoRotateSpeed: 0.5,
   };
+
+  // Sample arcs
   const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
+  const generateRandomColor = () =>
+    colors[Math.floor(Math.random() * colors.length)];
+
   const sampleArcs = [
     {
       order: 1,
@@ -39,7 +46,7 @@ export function GlobeDemo() {
       endLat: -22.9068,
       endLng: -43.1729,
       arcAlt: 0.1,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 1,
@@ -48,7 +55,7 @@ export function GlobeDemo() {
       endLat: 3.139,
       endLng: 101.6869,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 1,
@@ -57,7 +64,7 @@ export function GlobeDemo() {
       endLat: -1.303396,
       endLng: 36.852443,
       arcAlt: 0.5,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 2,
@@ -66,7 +73,7 @@ export function GlobeDemo() {
       endLat: 35.6762,
       endLng: 139.6503,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 2,
@@ -75,7 +82,7 @@ export function GlobeDemo() {
       endLat: 3.139,
       endLng: 101.6869,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 2,
@@ -84,7 +91,7 @@ export function GlobeDemo() {
       endLat: 36.162809,
       endLng: -115.119411,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 3,
@@ -93,7 +100,7 @@ export function GlobeDemo() {
       endLat: 22.3193,
       endLng: 114.1694,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 3,
@@ -102,7 +109,7 @@ export function GlobeDemo() {
       endLat: 40.7128,
       endLng: -74.006,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 3,
@@ -111,7 +118,7 @@ export function GlobeDemo() {
       endLat: 51.5072,
       endLng: -0.1276,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 4,
@@ -120,7 +127,7 @@ export function GlobeDemo() {
       endLat: -15.595412,
       endLng: -56.05918,
       arcAlt: 0.5,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 4,
@@ -129,7 +136,7 @@ export function GlobeDemo() {
       endLat: 22.3193,
       endLng: 114.1694,
       arcAlt: 0.7,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 4,
@@ -138,7 +145,7 @@ export function GlobeDemo() {
       endLat: 48.8566,
       endLng: -2.3522,
       arcAlt: 0.1,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 5,
@@ -147,7 +154,7 @@ export function GlobeDemo() {
       endLat: 51.5072,
       endLng: -0.1276,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 5,
@@ -156,7 +163,7 @@ export function GlobeDemo() {
       endLat: -33.8688,
       endLng: 151.2093,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 5,
@@ -165,7 +172,7 @@ export function GlobeDemo() {
       endLat: 48.8566,
       endLng: -2.3522,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 6,
@@ -174,7 +181,7 @@ export function GlobeDemo() {
       endLat: 1.094136,
       endLng: -63.34546,
       arcAlt: 0.7,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 6,
@@ -183,7 +190,7 @@ export function GlobeDemo() {
       endLat: 35.6762,
       endLng: 139.6503,
       arcAlt: 0.1,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 6,
@@ -192,7 +199,7 @@ export function GlobeDemo() {
       endLat: 51.5072,
       endLng: -0.1276,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 7,
@@ -201,7 +208,7 @@ export function GlobeDemo() {
       endLat: -15.595412,
       endLng: -56.05918,
       arcAlt: 0.1,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 7,
@@ -210,7 +217,7 @@ export function GlobeDemo() {
       endLat: 52.52,
       endLng: 13.405,
       arcAlt: 0.1,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 7,
@@ -219,7 +226,7 @@ export function GlobeDemo() {
       endLat: 34.0522,
       endLng: -118.2437,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 8,
@@ -228,7 +235,7 @@ export function GlobeDemo() {
       endLat: -33.936138,
       endLng: 18.436529,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 8,
@@ -237,7 +244,7 @@ export function GlobeDemo() {
       endLat: 52.3676,
       endLng: 4.9041,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 8,
@@ -246,7 +253,7 @@ export function GlobeDemo() {
       endLat: 40.7128,
       endLng: -74.006,
       arcAlt: 0.5,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 9,
@@ -255,7 +262,7 @@ export function GlobeDemo() {
       endLat: 34.0522,
       endLng: -118.2437,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 9,
@@ -264,7 +271,7 @@ export function GlobeDemo() {
       endLat: -22.9068,
       endLng: -43.1729,
       arcAlt: 0.7,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 9,
@@ -273,7 +280,7 @@ export function GlobeDemo() {
       endLat: -34.6037,
       endLng: -58.3816,
       arcAlt: 0.5,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 10,
@@ -282,7 +289,7 @@ export function GlobeDemo() {
       endLat: 28.6139,
       endLng: 77.209,
       arcAlt: 0.7,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 10,
@@ -291,7 +298,7 @@ export function GlobeDemo() {
       endLat: 31.2304,
       endLng: 121.4737,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 10,
@@ -300,7 +307,7 @@ export function GlobeDemo() {
       endLat: 52.3676,
       endLng: 4.9041,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 11,
@@ -309,7 +316,7 @@ export function GlobeDemo() {
       endLat: 34.0522,
       endLng: -118.2437,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 11,
@@ -318,7 +325,7 @@ export function GlobeDemo() {
       endLat: 31.2304,
       endLng: 121.4737,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 11,
@@ -327,7 +334,7 @@ export function GlobeDemo() {
       endLat: 1.3521,
       endLng: 103.8198,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 12,
@@ -336,7 +343,7 @@ export function GlobeDemo() {
       endLat: 37.7749,
       endLng: -122.4194,
       arcAlt: 0.1,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 12,
@@ -345,7 +352,7 @@ export function GlobeDemo() {
       endLat: 22.3193,
       endLng: 114.1694,
       arcAlt: 0.2,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 12,
@@ -354,7 +361,7 @@ export function GlobeDemo() {
       endLat: 34.0522,
       endLng: -118.2437,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 13,
@@ -363,7 +370,7 @@ export function GlobeDemo() {
       endLat: 22.3193,
       endLng: 114.1694,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 13,
@@ -372,7 +379,7 @@ export function GlobeDemo() {
       endLat: 35.6762,
       endLng: 139.6503,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 13,
@@ -381,7 +388,7 @@ export function GlobeDemo() {
       endLat: -34.6037,
       endLng: -58.3816,
       arcAlt: 0.1,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
     {
       order: 14,
@@ -390,40 +397,36 @@ export function GlobeDemo() {
       endLat: 21.395643,
       endLng: 39.883798,
       arcAlt: 0.3,
-      color: colors[Math.floor(Math.random() * (colors.length - 1))],
+      color: generateRandomColor(),
     },
   ];
 
+  const [windowWidth, setWindowWidth] = useState<number | null>(null);
+
+  // Ensure consistent hydration by determining window size
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  if (!windowWidth) return null; // Avoid rendering during SSR
+
   return (
-    <div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black bg-white relative w-full">
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 1,
-          }}
-          className="div"
-        >
-          <h2 className="text-center text-xl md:text-4xl font-bold text-black dark:text-white">
-            We sell soap worldwide
-          </h2>
-          <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-            This globe is interactive and customizable. Have fun with it, and
-            don&apos;t forget to share it. :)
-          </p>
-        </motion.div>
+    <div className="flex items-center justify-center absolute -left-5 top-36 md:top-40 w-full h-full">
+      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-96 px-4">
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-        <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
+        <div className="absolute w-full h-72 md:h-full z-10">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
     </div>
   );
 }
+
+export default GlobeDemo;
