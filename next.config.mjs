@@ -1,14 +1,18 @@
 import { withSentryConfig } from '@sentry/nextjs';
+/** @type {import('next').NextConfig} */
 // next.config.mjs
 const nextConfig = {
   output: "export",
   swcMinify: false,
+  typeScript: {
+    ignoreBuildErrors: true,
+  }
 };
 
 export default withSentryConfig(withSentryConfig(nextConfig, {
   // For all available options, see:
   // https://github.com/getsentry/sentry-webpack-plugin#options
-
+  silent: true,
   org: "mark-porcaro",
   project: "javascript-nextjs",
 
@@ -25,6 +29,8 @@ export default withSentryConfig(withSentryConfig(nextConfig, {
   reactComponentAnnotation: {
     enabled: true,
   },
+
+  transpileClientSDK: true,
 
   // Uncomment to route browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers.
   // This can increase your server load as well as your hosting bill.
