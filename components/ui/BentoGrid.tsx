@@ -2,8 +2,8 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
-// Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 import { GradientBg } from "./GradientBg";
 import { cn } from "@/lib/utils";
 
@@ -185,7 +185,11 @@ export const BentoGridItem = ({
                 }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+                <Lottie
+                  animationData={animationData}
+                  loop={copied}
+                  autoplay={copied}
+                />
               </div>
 
               <MagicButton

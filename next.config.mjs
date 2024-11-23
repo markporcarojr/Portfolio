@@ -1,7 +1,8 @@
 import { withSentryConfig } from '@sentry/nextjs';
 // next.config.mjs
 const nextConfig = {
-  output: "export"
+  output: "export",
+  swcMinify: false,
 };
 
 export default withSentryConfig(withSentryConfig(nextConfig, {

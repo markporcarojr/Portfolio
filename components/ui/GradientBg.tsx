@@ -39,23 +39,28 @@ export const GradientBg = ({
   const [curY, setCurY] = useState(0);
   const [tgX, setTgX] = useState(0);
   const [tgY, setTgY] = useState(0);
+
+  const isBrowser = typeof window !== "undefined";
+
   useEffect(() => {
-    document.body.style.setProperty(
-      "--gradient-background-start",
-      gradientBackgroundStart
-    );
-    document.body.style.setProperty(
-      "--gradient-background-end",
-      gradientBackgroundEnd
-    );
-    document.body.style.setProperty("--first-color", firstColor);
-    document.body.style.setProperty("--second-color", secondColor);
-    document.body.style.setProperty("--third-color", thirdColor);
-    document.body.style.setProperty("--fourth-color", fourthColor);
-    document.body.style.setProperty("--fifth-color", fifthColor);
-    document.body.style.setProperty("--pointer-color", pointerColor);
-    document.body.style.setProperty("--size", size);
-    document.body.style.setProperty("--blending-value", blendingValue);
+    if (isBrowser) {
+      document.body.style.setProperty(
+        "--gradient-background-start",
+        gradientBackgroundStart
+      );
+      document.body.style.setProperty(
+        "--gradient-background-end",
+        gradientBackgroundEnd
+      );
+      document.body.style.setProperty("--first-color", firstColor);
+      document.body.style.setProperty("--second-color", secondColor);
+      document.body.style.setProperty("--third-color", thirdColor);
+      document.body.style.setProperty("--fourth-color", fourthColor);
+      document.body.style.setProperty("--fifth-color", fifthColor);
+      document.body.style.setProperty("--pointer-color", pointerColor);
+      document.body.style.setProperty("--size", size);
+      document.body.style.setProperty("--blending-value", blendingValue);
+    }
   }, []);
 
   useEffect(() => {

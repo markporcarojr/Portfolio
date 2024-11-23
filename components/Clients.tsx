@@ -1,7 +1,5 @@
-import React from "react";
-import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
 import { companies, testimonials } from "@/data";
-import { div } from "framer-motion/client";
+import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
 
 const Clients = () => {
   return (
