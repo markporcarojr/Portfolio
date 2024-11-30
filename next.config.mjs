@@ -3,9 +3,9 @@ import { withSentryConfig } from '@sentry/nextjs';
 const nextConfig = {
   output: "export",
   swcMinify: false,
-  typeScript: {
-    ignoreBuildErrors: true,
-  }
+  // typeScript: {
+  //   ignoreBuildErrors: true,
+  // }
 };
 
 export default withSentryConfig(nextConfig, {

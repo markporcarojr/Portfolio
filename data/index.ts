@@ -72,19 +72,19 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "Hive Tool - Apiary Management App",
+    des: "A comprehensive web application to assist beekeepers in managing their hives. Developed with Node.js, Express, and MongoDB.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    iconLists: ["/re.svg", "/boot.svg", "/ts.svg", "/mongo.svg", "/nodejs.svg"],
+    link: "https://hive-tool.netlify.app/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    title: "What's in that bin?",
+    des: "Storage bin organizer app, with photos and search",
+    img: "/bin.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/MySQL.svg", "/c.svg"],
+    link: "https://whats-in-that-bin.vercel.app/",
   },
   {
     id: 3,
