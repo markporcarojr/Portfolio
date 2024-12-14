@@ -1,4 +1,4 @@
-import { companies, testimonials } from "@/data";
+import { testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
 
 const Clients = () => {
