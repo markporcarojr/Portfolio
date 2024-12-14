@@ -98,7 +98,7 @@ export const projects = [
   {
     id: 4,
     title: "House Wizard - Business Portfolio",
-    des: "Created a bsic portfolio page, using vanilla js, bootstrap, and css",
+    des: "Created a basic portfolio page, using vanilla js, bootstrap, and css",
     img: "/hw.png",
     iconLists: ["/next.svg", "/boot.svg", "/css.svg"],
     link: "https://housewizardhr.com",
