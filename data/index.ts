@@ -73,19 +73,19 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "What's in that bin?",
+    des: "A storage bin organizer app with image uploads, pagination, and search functionality for easy item management.",
+    img: "/bin.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/MySQL.svg", "/c.svg"],
+    link: "https://whats-in-that-bin.vercel.app/",
+  },
+  {
+    id: 2,
     title: "Hive Tool - Apiary Management App",
     des: "A comprehensive web application to assist beekeepers in managing their hives. Developed with Node.js, Express, and MongoDB.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/boot.svg", "/ts.svg", "/mongo.svg", "/nodejs.svg"],
     link: "https://hive-tool.netlify.app/",
-  },
-  {
-    id: 2,
-    title: "What's in that bin?",
-    des: "Storage bin organizer app, with photos and search",
-    img: "/bin.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/MySQL.svg", "/c.svg"],
-    link: "https://whats-in-that-bin.vercel.app/",
   },
   {
     id: 3,
