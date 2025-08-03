@@ -401,21 +401,13 @@ export function GlobeDemo() {
     },
   ];
 
-  const [windowWidth, setWindowWidth] = useState<number | null>(null);
+  const [hasMounted, setHasMounted] = useState(false);
 
-  // Ensure consistent hydration by determining window size
   useEffect(() => {
-    setWindowWidth(window.innerWidth);
-
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    setHasMounted(true);
   }, []);
 
-  if (!windowWidth) return null; // Avoid rendering during SSR
+  if (!hasMounted) return null;
 
   return (
     <div className="flex items-center justify-center absolute -left-5 top-36 md:top-40 w-full h-full">
