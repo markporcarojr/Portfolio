@@ -85,7 +85,7 @@ export const projects = [
     des: "A comprehensive web application to assist beekeepers in managing their hives. Developed with Node.js, Express, and MongoDB.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/boot.svg", "/ts.svg", "/mongo.svg", "/nodejs.svg"],
-    link: "https://hive-tool.netlify.app/",
+    link: "https://apiary-tool.com/",
   },
   {
     id: 3,
