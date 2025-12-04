@@ -81,10 +81,10 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Hive Tool - Apiary Management App",
-    des: "A comprehensive web application to assist beekeepers in managing their hives. Developed with Node.js, Express, and MongoDB.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/boot.svg", "/ts.svg", "/mongo.svg", "/nodejs.svg"],
+    title: "Hive Tool",
+    des: "A comprehensive web app to assist beekeepers in managing their hives. Developed with Next.JS, Tailwind, and PostgreSQL.",
+    img: "/hive_demo.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/post.svg", "/c.svg"],
     link: "https://apiary-tool.com/",
   },
   {
@@ -93,7 +93,7 @@ export const projects = [
     des: "An elegant approach to e-commerce for this small mom-and-pop shop. Built on Next.JS and Shopify",
     img: "/porcaro.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/shopify.svg"],
-    link: "https://porcaro-farms-commerce.vercel.app/",
+    link: "https://porcaro-farms.vercel.app/",
   },
   {
     id: 4,
