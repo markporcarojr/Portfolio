@@ -31,7 +31,8 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center gap-5">
         <p className="md:text-base text-sm font-light md:font-normal">
-          Copywright © 2024 Mark
+          Copywright © {new Date().getFullYear()} Mark Porcaro Jr. All rights
+          reserved.
         </p>
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((profile) => (

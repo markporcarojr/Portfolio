@@ -50,7 +50,7 @@ export const gridItems = [
   {
     id: 5,
     title:
-      "Currently building projects with Next.js, exploring the power of server-side rendering and static site generation. Always excited to learn and improve!",
+      "Currently building ShopFusion — check out the live demo below. Always excited to learn and improve!",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,19 +72,26 @@ export const gridItems = [
 
 export const projects = [
   {
-    id: 1,
-    title: "What's in that bin?",
-    des: "A storage bin organizer app with image uploads, pagination, and search functionality for easy item management.",
-    img: "/bin.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/MySQL.svg", "/c.svg"],
-    link: "https://whats-in-that-bin.vercel.app/",
+    id: 2,
+    title: "ShopFusion",
+    des: "A real-world job tracking app for CNC machine shops, built from the floor up. Tracks jobs, components, and time entries, with a Fusion 360 add-in that pushes model data (mass, material, revision) straight from CAD into the app.",
+    img: "/ShopFusion.jpg",
+    iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/c.svg"],
+    link: "https://porcaro-farms.vercel.app/",
   },
   {
     id: 2,
     title: "Hive Tool",
     des: "A comprehensive web app to assist beekeepers in managing their hives. Developed with Next.JS, Tailwind, and PostgreSQL.",
     img: "/hive_demo.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/post.svg", "/c.svg"],
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/post.svg",
+      "/c.svg",
+      "/chatGPT.svg",
+    ],
     link: "https://apiary-tool.com/",
   },
   {
@@ -97,11 +104,11 @@ export const projects = [
   },
   {
     id: 4,
-    title: "House Wizard - Business Portfolio",
-    des: "Created a basic portfolio page, using vanilla js, bootstrap, and css",
-    img: "/hw.png",
-    iconLists: ["/next.svg", "/boot.svg", "/css.svg"],
-    link: "https://housewizardhr.com",
+    title: "What's in that bin?",
+    des: "A storage bin organizer app with image uploads, pagination, and search functionality for easy item management.",
+    img: "/bin.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/MySQL.svg", "/c.svg"],
+    link: "https://whats-in-that-bin.vercel.app/",
   },
 ];
 
