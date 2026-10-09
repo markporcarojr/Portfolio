@@ -12,11 +12,10 @@ const Approach = () => {
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
-          title="Learn the process"
+          title="Understand the problem"
           icon={<AceternityIcon order="Phase 1" />}
-          description="I start where the work happens: on the floor, with the people
-          doing it. What's tracked on paper, what gets re-entered by hand, and
-          where time actually gets lost."
+          description="I start by learning how the work actually gets done today: who uses
+          it, what slows them down, and what a real fix looks like."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -26,9 +25,8 @@ const Approach = () => {
         <Card
           title="Build & iterate"
           icon={<AceternityIcon order="Phase 2" />}
-          description="I build the smallest thing that fixes the real problem, run it
-          against actual jobs, and adjust. Short loops, honest feedback, no
-          surprises."
+          description="I build the smallest version that solves the problem, test it with
+          real use, and improve it in short loops with regular updates."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -41,10 +39,10 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Standardize & support"
+          title="Ship & support"
           icon={<AceternityIcon order="Phase 3" />}
-          description="Once it works, I document it and train people on it so it sticks.
-          A tool nobody uses is just another binder on the shelf."
+          description="Once it's live, I document it and help people get comfortable with
+          it, then keep it maintained as needs change."
         >
           <CanvasRevealEffect
             animationSpeed={3}

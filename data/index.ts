@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "20 years on the shop floor. I know what the software has to survive.",
+    title: "I build software around how people actually work.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -18,7 +18,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I learn fast, then teach it. I usually end up training the next guy.",
+    title: "I learn fast and I like teaching what I learn.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -38,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "CNC programming in Fusion 360. Software in Next.js and Python.",
+    title: "Full-stack developer with a manufacturing background.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -50,7 +50,7 @@ export const gridItems = [
   {
     id: 5,
     title:
-      "Built ShopFusion because shops still run on paper. Try the live demo below.",
+      "Latest project: ShopFusion. Try the live demo below.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -60,7 +60,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Want to talk shop or software?",
+    title: "Do you want to start a project together?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",

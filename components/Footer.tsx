@@ -14,8 +14,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col items-center">
         <h1 className="heading max-w-[45vw]">
-          Working on something where{" "}
-          <span className="text-purple">machining meets software</span>?
+          Have a <span className="text-purple">project</span> in mind?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Let&apos;s talk. Reach me at markporcarojr@gmail.com.
