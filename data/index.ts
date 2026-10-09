@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "20 years on the shop floor. I know what the software has to survive.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -18,7 +18,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "I learn fast, then teach it. I usually end up training the next guy.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -38,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "CNC programming in Fusion 360. Software in Next.js and Python.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -50,7 +50,7 @@ export const gridItems = [
   {
     id: 5,
     title:
-      "Currently building ShopFusion — check out the live demo below. Always excited to learn and improve!",
+      "Built ShopFusion because shops still run on paper. Try the live demo below.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -60,7 +60,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Want to talk shop or software?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -72,17 +72,17 @@ export const gridItems = [
 
 export const projects = [
   {
-    id: 2,
+    id: 1,
     title: "ShopFusion",
-    des: "A real-world job tracking app for CNC machine shops, built from the floor up. Tracks jobs, components, and time entries, with a Fusion 360 add-in that pushes model data (mass, material, revision) straight from CAD into the app.",
+    des: "Job tracking for CNC shops that still run on paper. Tracks jobs, components and time, with a Python add-in for Fusion 360 that pushes part data (mass, material, revision) straight from the CAD model into the app. One-click demo login.",
     img: "/ShopFusion.jpg",
-    iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/c.svg"],
-    link: "https://porcaro-farms.vercel.app/",
+    iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/post.svg", "/c.svg"],
+    link: "https://shopfusion1.vercel.app/",
   },
   {
     id: 2,
     title: "Hive Tool",
-    des: "A comprehensive web app to assist beekeepers in managing their hives. Developed with Next.JS, Tailwind, and PostgreSQL.",
+    des: "A web app for beekeepers to manage hives, clients and invoicing, with an AI assistant. Built with Next.js, Tailwind and PostgreSQL.",
     img: "/hive_demo.png",
     iconLists: [
       "/next.svg",
@@ -97,7 +97,7 @@ export const projects = [
   {
     id: 3,
     title: "Porcaro Farms - E-Commerce Website",
-    des: "An elegant approach to e-commerce for this small mom-and-pop shop. Built on Next.JS and Shopify",
+    des: "An elegant approach to e-commerce for this small mom-and-pop shop. Built on Next.js and Shopify",
     img: "/porcaro.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/shopify.svg"],
     link: "https://porcaro-farms.vercel.app/",

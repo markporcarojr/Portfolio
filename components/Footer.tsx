@@ -14,12 +14,11 @@ const Footer = () => {
       </div>
       <div className="flex flex-col items-center">
         <h1 className="heading max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+          Working on something where{" "}
+          <span className="text-purple">machining meets software</span>?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+          Let&apos;s talk. Reach me at markporcarojr@gmail.com.
         </p>
         <a href="mailto:markporcarojr@gmail.com">
           <MagicButton
@@ -31,7 +30,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center gap-5">
         <p className="md:text-base text-sm font-light md:font-normal">
-          Copywright © {new Date().getFullYear()} Mark Porcaro Jr. All rights
+          Copyright © {new Date().getFullYear()} Mark Porcaro Jr. All rights
           reserved.
         </p>
         <div className="flex items-center md:gap-3 gap-6">

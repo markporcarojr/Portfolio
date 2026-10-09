@@ -12,11 +12,11 @@ const Approach = () => {
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
-          title="Planning & strategy"
+          title="Learn the process"
           icon={<AceternityIcon order="Phase 1" />}
-          description="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          description="I start where the work happens: on the floor, with the people
+          doing it. What's tracked on paper, what gets re-entered by hand, and
+          where time actually gets lost."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -24,11 +24,11 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Build & iterate"
           icon={<AceternityIcon order="Phase 2" />}
-          description="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          description="I build the smallest thing that fixes the real problem, run it
+          against actual jobs, and adjust. Short loops, honest feedback, no
+          surprises."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -41,11 +41,10 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Launch"
+          title="Standardize & support"
           icon={<AceternityIcon order="Phase 3" />}
-          description="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          description="Once it works, I document it and train people on it so it sticks.
+          A tool nobody uses is just another binder on the shelf."
         >
           <CanvasRevealEffect
             animationSpeed={3}

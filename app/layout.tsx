@@ -6,8 +6,9 @@ import { ThemeProvider } from "next-themes";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mark's Portfolio",
-  description: "Modern Portfolio Built With Next.js",
+  title: "Mark Porcaro | CNC Machinist & Full-Stack Developer",
+  description:
+    "CNC machinist and full-stack developer building software for the shop floor: job tracking, CAD/CAM data automation, and process tools.",
   icons: {
     icon: "/MP.png",
   },
