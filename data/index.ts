@@ -115,7 +115,7 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Mark's enthusiasm for learning and dedication to honing his skills as a Next.js developer are remarkable. His ability to approach problems with creativity and persistence is truly inspiring. I have no doubt he'll excel in his first professional role.",
+      "Mark's enthusiasm for learning and dedication to honing his skills as a Next.js developer are remarkable. His ability to approach problems with creativity and persistence is truly inspiring.",
     name: "Ilya Dorman",
     title: "Web Development Mentor",
     img: "/ilya.jpeg",
@@ -133,13 +133,6 @@ export const testimonials = [
     name: "Courtney Walsh",
     title: "Fellow Developer",
     img: "https://ca.slack-edge.com/T010QDM8YKH-U01K5KGGB6W-04fc47173fc2-192",
-  },
-  {
-    quote:
-      "Though early in his career, Mark has shown impressive initiative and a solid understanding of Next.js fundamentals. His eagerness to learn and grow ensures he will thrive in a professional environment.",
-    name: "Daniel Green",
-    title: "Bootcamp Instructor",
-    img: "https://plus.unsplash.com/premium_photo-1689629870780-5d0e655383e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
