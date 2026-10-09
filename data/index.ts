@@ -49,8 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title:
-      "Latest project: ShopFusion. Try the live demo below.",
+    title: "Latest project: ShopFusion. Try the live demo below.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -94,22 +93,22 @@ export const projects = [
     ],
     link: "https://apiary-tool.com/",
   },
-  {
-    id: 3,
-    title: "Porcaro Farms - E-Commerce Website",
-    des: "An elegant approach to e-commerce for this small mom-and-pop shop. Built on Next.js and Shopify",
-    img: "/porcaro.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/shopify.svg"],
-    link: "https://porcaro-farms.vercel.app/",
-  },
-  {
-    id: 4,
-    title: "What's in that bin?",
-    des: "A storage bin organizer app with image uploads, pagination, and search functionality for easy item management.",
-    img: "/bin.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/MySQL.svg", "/c.svg"],
-    link: "https://whats-in-that-bin.vercel.app/",
-  },
+  // {
+  //   id: 3,
+  //   title: "Porcaro Farms - E-Commerce Website",
+  //   des: "An elegant approach to e-commerce for this small mom-and-pop shop. Built on Next.js and Shopify",
+  //   img: "/porcaro.png",
+  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/shopify.svg"],
+  //   link: "https://porcaro-farms.vercel.app/",
+  // },
+  // {
+  //   id: 4,
+  //   title: "What's in that bin?",
+  //   des: "A storage bin organizer app with image uploads, pagination, and search functionality for easy item management.",
+  //   img: "/bin.png",
+  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/MySQL.svg", "/c.svg"],
+  //   link: "https://whats-in-that-bin.vercel.app/",
+  // },
 ];
 
 export const testimonials = [
