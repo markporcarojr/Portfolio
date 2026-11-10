@@ -1,13 +1,13 @@
 "use client";
 import countries from "@/data/globe.json";
 import { OrbitControls } from "@react-three/drei";
-import { Canvas, extend, Object3DNode, useThree } from "@react-three/fiber";
+import { Canvas, extend, ThreeElement, useThree } from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
 import { Color, Fog, Vector3 } from "three";
 import ThreeGlobe from "three-globe";
 declare module "@react-three/fiber" {
   interface ThreeElements {
-    threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
+    threeGlobe: ThreeElement<typeof ThreeGlobe>;
   }
 }
 

@@ -1,4 +1,4 @@
-// This file configures the initialization of Sentry on the client.
+// This file configures the initialization of Sentry on the client (Next.js instrumentation-client hook).
 // The config you add here will be used whenever a users loads a page in their browser.
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/
 
@@ -31,3 +31,5 @@ Sentry.init({
   // Setting this option to true will print useful information to the console while you're setting up Sentry.
   debug: false,
 });
+
+export const onRouterTransitionStart = Sentry.captureRouterTransitionStart;
